@@ -5,10 +5,85 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <header>
+    <div id='site-name'>
+      Samkart
+    </div>
+    <div id='search-box'>
+      <form action='#' method='get' autocomplete='off'>
+        <input type='text' name='search-query' placeholder='Search for a product, category or brand.'>
+        <input type='submit' name='search' value='Search'>
+      </form>
+    </div>
+  </header>
 
-<%= yield %>
+  <nav>
+    <ul>
+      <li><a href='#'>Link Address</a></li>
+      <li><a href='#'>Link Address</a></li>
+      <li><a href='#'>Link Address</a></li>
+      <li><a href='#'>Link Address</a></li>
+      <li><a href='#'>Link Address</a></li>
+      <li><a href='#'>Link Address</a></li>
+    </ul>
+  </nav>
 
+  <div class='clear'></div>
+
+  <div id='body-wrapper'>
+    <div id='body-container'>
+      <%= yield %>
+    </div>
+  </div>
+
+  <footer>
+    <div id='footer-col-plates'>
+      <div class='footer-col-plate'>
+        <h3>Categories</h3>
+        <ul>
+        <li> Mobiles &amp; Tablets</li>
+        <li>Computers, Laptops &amp; Gaming</li>
+        <li>TVs, Appliances &amp; Cameras</li>
+        <li>Home &amp; Living</li>
+        <li>Women's Fashion</li>
+        <li>Men's Fashion</li>
+        <li>Toys, Kids &amp; Babies</li>
+        <li>Jewellery &amp; Gold Coins</li>
+        <li>Sports, Health &amp; Gourmet<li>
+        </ul>
+      </div>
+      <div class='footer-col-plate'>
+        <h3>Information</h3>
+        <ul>
+          <li>Specials</li>
+          <li>New products</li>
+          <li>Best sellers</li>
+          <li>Our stores</li>
+          <li>Contact us</li>
+          <li>Terms and conditions of use</li>
+          <li>About us</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+      <div class='footer-col-plate'>
+        <h3>My Account</h3>
+        <ul>
+          <li>My orders</li>
+          <li>My credit slips</li>
+          <li>My addresses</li>
+          <li>My personal info</li>
+        </ul>
+      </div>
+      <div class='clear'></div>
+    </div>
+    <div id='copy-right'>
+      <hr>
+      &copy; Samkart 2015
+    </div>
+  </footer>
 </body>
 </html>

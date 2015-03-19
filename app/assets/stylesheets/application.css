@@ -13,3 +13,145 @@
  *= require_tree .
  *= require_self
  */
+
+body  {
+  margin: 0px auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+header  {
+  background: #27C5C3;
+  height: 120px;
+  margin: 0px 0px;
+  width: 100%;
+}
+
+#site-name  {
+  color: #F9F4ED;
+  font-size: 54px;
+  font-weight: bold;
+  margin: 0px 0px;
+  padding: 0px 0px 0px 10%; /* 10% left paddiing added to place name of site properly*/
+}
+
+#search-box {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+#search-box form {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+#search-box input[type = text]  {
+  border: 0px solid #666;
+  color: #141c22;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  margin: 0px 0px;
+  padding: 0px 15px;
+  width: 400px;
+}
+
+#search-box input[type = submit]  {
+  background: #141c22;
+  border: 0px solid #141c22;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  height: 40px;
+  margin: 0px 0px 0px -5px;
+  padding: 0px 0px;
+  width: 170px;
+}
+
+nav {
+  font-size: 18px;
+  margin: 0px 0px;
+}
+
+nav ul  {
+  height: 40px;
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  width: 100%;
+}
+
+nav ul li {
+  float: left;
+  text-align: center;
+  width: 16.66%;
+}
+
+nav ul a  {
+  background: #E63250;
+  color: #F9F4ED;
+  display: block;
+  font-size: 18px;
+  height: auto;
+  padding: 10px 0px;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav ul a:hover  {
+  background: #D63240;
+}
+
+#body-wrapper {
+  background: #FAFBFB;
+  margin: 0px auto;
+  padding: 0px 0px;
+  width: 100%;
+}
+
+#body-container  {
+  background: #FAFBFB;
+  margin: 0px auto;
+  padding: 0px 0px;
+  width: 85%;
+}
+
+footer  {
+  background: #141c22;
+  color: #fff;
+  font-size: 18px;
+  height: 450px;
+}
+
+footer #footer-col-plates {
+  margin: 0px auto;
+  padding: 20px 0px 0px 0px;
+  width: 85%;
+}
+
+footer #footer-col-plates .footer-col-plate {
+  float: left;
+  width: 23%;
+}
+
+footer #footer-col-plates .footer-col-plate ul {
+  list-style: none;
+  opacity: 0.7;
+  padding: 0px 0px;
+  text-align: left;
+}
+
+footer #copy-right  {
+  margin: 0px auto;
+  width: 85%;
+}
+
+footer #copy-right  hr  {
+  background: #FFF;
+  height: 1px;
+  opacity: 0.5;
+}
+
+.clear  {
+  clear: both;
+}
