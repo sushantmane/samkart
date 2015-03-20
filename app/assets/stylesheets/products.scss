@@ -1,9 +1,41 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body, h1, h2, h3, h4, p, div {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
 
-table {
+.pane-header  {
+  background: #666;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 28px;
+  margin: 0px 0px;
+  padding: 3px 0px;
+  text-align: center;
+}
 
+#product-table ul  {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+#product-table ul li ul  {
+  border: 1px solid yellow;
+  list-style: none;
+  text-align: center;
+  width: 260px;
+}
+
+#product-table ul li ul li {
   border: 1px solid red;
-  border-collapse: collaspse;
+  list-style: none;
+  text-align: center;
+}
+
+.product-image  {
+  height: 200px;
+  width: 200px;
 }
