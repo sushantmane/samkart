@@ -8,22 +8,30 @@
   <ul>
       <% @products.each do |product| %>
         <li>
-          <ul>
-            <li><%= image_tag(product.image_url, class: 'product-image') %></li>
-            <li><%= product.title %></li>
-            <li><hr></li>
-            <li>Rs. <%= product.price %></li>
-            <li><%= link_to 'Show', product %>
+          <div class='product-box'>
+            <div class='product-image-box'>
+              <%= image_tag(product.image_url, class: 'product-image') %>
+            </div>
+            <div class='product-title-box'>
+              <%= product.title %>
+            </div>
+            <div class='product-price-box'>
+              Rs. <%= product.price %>
+            </div>
+            <div><%= link_to 'Show', product %>
                 |
                 <%= link_to 'Edit', edit_product_path(product) %>
                 |
                 <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </li>
-          </ul>
+            </div>
+          </div>
         </li>
       <% end %>
   </ul>
 </div>
+
+<div class='clear'></div>
+
 <div id='page-links'>
   <%= link_to 'New Product', new_product_path %>
 </div>
