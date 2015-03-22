@@ -9,3 +9,14 @@ one: {}
 #
 two: {}
 #  column: value
+#
+
+saree:
+  title: Stylus-series-black-semi-stitched-gown
+  description:
+    0-Stylus-series-black-semi-stitched-gown
+    1-Stylus-series-black-semi-stitched-gown
+    2-Stylus-series-black-semi-stitched-gown
+    3-Stylus-series-black-semi-stitched-gown
+  price: 3989.60
+  image_url: stylus-series-black-semi-stitched-gown.jpg

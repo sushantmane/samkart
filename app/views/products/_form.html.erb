@@ -1,15 +1,44 @@
 <%= form_for(@product) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <% if @product.errors.any? %>
+    <div id='error-explanation'>
+      <h2>
+        <%= pluralize(@product.errors.count, 'error') %>
+        prohibited this product from being saved:
+      </h2>
+      <ul>
+        <% @product.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='form-element'>
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: 'Product Name' %>
+    <span class='error-msg'><%= @product.errors[:title][0] %></span>
+  </div>
 
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+  <div class='form-element'>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <span class='error-msg'><%= @product.errors[:description][0] %></span>
+  </div>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+  <div class='form-element'>
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+    <span class='error-msg'><%= @product.errors[:image_url][0] %></span>
+  </div>
 
-  <%= f.label :price %>
-  <%= f.text_field :price %>
+  <div class='form-element'>
+    <%= f.label :price %>
+    <%= f.number_field :price, min: '1', step: 'any' %>
+    <span class='error-msg'><%= @product.errors[:price][0] %></span>
+  </div>
 
-  <%= f.submit %>
+  <div class='form-element'>
+    <%= f.submit %>
+  </div>
 <% end %>

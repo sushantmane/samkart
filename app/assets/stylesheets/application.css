@@ -46,12 +46,12 @@ header  {
 
 #search-box input[type = text]  {
   border: 0px solid #666;
-  color: #141c22;
+  color: #555;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  height: 40px;
+  font-size: 16px;
+  height: auto;
   margin: 0px 0px;
-  padding: 0px 15px;
+  padding: 10px 15px;
   width: 400px;
 }
 
@@ -60,10 +60,10 @@ header  {
   border: 0px solid #141c22;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  height: 40px;
+  font-size: 16px;
+  height: auto;
   margin: 0px 0px 0px -5px;
-  padding: 0px 0px;
+  padding: 10px 0px;
   width: 170px;
 }
 

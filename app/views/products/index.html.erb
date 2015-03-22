@@ -10,19 +10,21 @@
         <li>
           <div class='product-box'>
             <div class='product-image-box'>
-              <%= image_tag(product.image_url, class: 'product-image') %>
+              <%= link_to image_tag(product.image_url, class: 'product-image'), product %>
             </div>
             <div class='product-title-box'>
-              <%= product.title %>
+              <%= link_to product.title, product %>
             </div>
             <div class='product-price-box'>
               Rs. <%= product.price %>
             </div>
-            <div><%= link_to 'Show', product %>
-                |
+            <div class='product-link-box'>
+              <span>
                 <%= link_to 'Edit', edit_product_path(product) %>
-                |
+              </span>
+              <span>
                 <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </span>
             </div>
           </div>
         </li>
